@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Program.Controller1">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Backgrounds/WinterNight.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-5.0" layoutY="-3.0" prefHeight="51.0" prefWidth="1289.0" style="-fx-background-color: #282828;">
+         <children>
+            <TextField fx:id="city" layoutX="876.0" layoutY="13.0" opacity="0.28" prefHeight="25.0" prefWidth="272.0" text="Enter Your City">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+         </children></Pane>
+      <AnchorPane layoutX="14.0" layoutY="63.0" opacity="0.41" prefHeight="651.0" prefWidth="1253.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Text layoutX="1071.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© BOHDAN PYLYP ALL RIGHTS RESERVED">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text layoutX="437.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMATION">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Text>
+            <Text fx:id="temp_info" layoutX="14.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMPERATURE:">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="pressure" layoutX="724.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESSURE:">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="temp_max" layoutX="29.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAX:">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="temp_min" layoutX="29.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIN:">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="name" layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CITY" wrappingWidth="296.443359375">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="humidity" layoutX="724.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HUMIDITY:">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="date" layoutX="7.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE: ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIMPLE WEATHER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="getData" layoutX="1147.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ADD8E6;" text="Search Weather" />
+   </children>
+</Pane>
